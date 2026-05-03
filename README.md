@@ -241,12 +241,14 @@ ecommerce-olist-analytics/
 
 ---
 
-## 👤 Autor
 
-**Rodrigo de Souza Silva**  
-🔗 LinkedIn: [linkedin.com/in/rodrigodesouza7](https://linkedin.com/in/rodrigodesouza7)  
-💻 GitHub: [@rodrigodesouza7](https://github.com/rodrigodesouza7)  
-📧 Email: rodrigo.souza@example.com
+👤 Sobre o Autor
+
+Rodrigo de Souza Silva Profissional de Tecnologia da Informação com formação em Sistemas de Informação e pós-graduação em Data Science, Machine Learning e IA.
+
+    🔗 LinkedIn: https://www.linkedin.com/in/rodrigodesouzasilva
+    💻 GitHub: https://github.com/rodrigodesouza7
+
 
 ---
 
