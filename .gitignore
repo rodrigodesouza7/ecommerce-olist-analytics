@@ -1,0 +1,27 @@
+# Dados brutos (CSVs não devem subir pro GitHub)
+dados/*.csv
+dados/*.zip
+*.csv
+
+# Credenciais
+.env
+.env.local
+*.pem
+*.key
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Python (se usar notebooks)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs
+*.log
