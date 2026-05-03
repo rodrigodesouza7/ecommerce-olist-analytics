@@ -256,4 +256,3 @@ MIT License — Projeto de portfólio profissional
 
 ---
 
-**⭐ Se este projeto foi útil, considere dar uma estrela no repositório!**
