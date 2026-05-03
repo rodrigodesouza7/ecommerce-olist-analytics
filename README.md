@@ -1,10 +1,14 @@
 # 🗄️ Olist Sales Analytics — Modelagem Dimensional PostgreSQL
 
-Banco de dados analítico aplicando **Star Schema** sobre dataset real de e-commerce brasileiro (Olist/Kaggle). Projeto desenvolvido para demonstrar modelagem dimensional, integridade referencial e SQL analítico avançado.
-
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue.svg)](https://www.postgresql.org/)
-[![Star Schema](https://img.shields.io/badge/Model-Star%20Schema-green.svg)](https://www.kimballgroup.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql)](https://www.postgresql.org/)
+[![Star Schema](https://img.shields.io/badge/Model-Star%20Schema-green)](https://www.kimballgroup.com/)
+[![SQL](https://img.shields.io/badge/SQL-Advanced-orange)](https://www.postgresql.org/docs/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Dataset](https://img.shields.io/badge/Dataset-Kaggle%20Olist-red)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+> Banco de dados analítico aplicando Star Schema sobre dataset real de e-commerce brasileiro (100k pedidos), com SQL avançado, integridade referencial e queries otimizadas para insights de negócio.
+
+**Tecnologias:** PostgreSQL 15 | Star Schema | Window Functions | CTEs | Índices Funcionais
 
 ---
 
@@ -16,6 +20,26 @@ Banco de dados analítico aplicando **Star Schema** sobre dataset real de e-comm
 **Período:** 2016-2018 | **Volume:** ~100.000 pedidos | **Linhas carregadas:** 98.778 em `fato_itens`  
 **Tecnologia:** PostgreSQL 15 | **Modelagem:** Star Schema
 
+---
+## 🛠️ Tech Stack
+
+### Database
+- **PostgreSQL 15** — Banco relacional com suporte avançado a índices funcionais
+
+### Modelagem
+- **Star Schema** — Arquitetura dimensional para OLAP
+- **3FN** — Normalização nas tabelas dimensão
+
+### SQL Features
+- **Window Functions** — LAG(), RANK() OVER PARTITION BY
+- **CTEs** — Common Table Expressions para queries complexas
+- **Functional Indexes** — DATE_TRUNC() para agregações temporais
+- **Constraints** — PKs compostas, FKs com CASCADE/RESTRICT
+
+### Tools
+- **DBeaver** — IDE SQL para desenvolvimento e testes
+- **dbdiagram.io** — Modelagem visual do DER
+- **Git/GitHub** — Versionamento de código
 ---
 
 ## 🗄️ Modelo de Dados
@@ -46,6 +70,33 @@ Banco de dados analítico aplicando **Star Schema** sobre dataset real de e-comm
 
 - [📋 Dicionário de Dados](docs/dicionario-dados.md)
 - [📐 Normalização e Trade-offs](docs/normalizacao.md)
+
+---
+## ✨ Features
+
+### 📊 Modelagem de Dados
+- ✅ Star Schema com 3 dimensões + 2 fatos
+- ✅ Integridade referencial via 4 Foreign Keys
+- ✅ Normalização 3FN nas dimensões
+- ✅ Limpeza de 240 duplicatas pré-constraints
+
+### ⚡ Otimização
+- ✅ 15 índices estratégicos (FKs, temporal, geográfico)
+- ✅ Índice funcional para agregações mensais
+- ✅ Queries otimizadas validadas via EXPLAIN ANALYZE
+
+### 📈 Análises Implementadas
+- ✅ KPIs executivos (receita mensal, crescimento MoM)
+- ✅ Ranking de produtos por categoria (RANK OVER PARTITION BY)
+- ✅ Análise geográfica com % do total nacional
+- ✅ Performance de vendedores (top sellers)
+- ✅ Análise de custos logísticos (frete/receita)
+
+### 📚 Documentação
+- ✅ Dicionário de dados completo (Markdown)
+- ✅ Análise de normalização e trade-offs
+- ✅ Prints de queries executadas com dados reais
+- ✅ Scripts DDL padronizados e comentados
 
 ---
 
